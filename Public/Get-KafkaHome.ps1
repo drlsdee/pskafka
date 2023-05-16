@@ -43,6 +43,8 @@ function Get-KafkaHome {
     [CmdletBinding()]
     param(
         [Parameter(Position=1)]
+        [AllowNull()]
+        [AllowEmptyString()]
         [string]$Default
     )
     end {
